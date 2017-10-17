@@ -10,32 +10,43 @@
   </head>
   <body>
     <div class="container">
-      <h1>Book an Appointment</h1>
-      <form>
+      <title>Survey</title>
+      <form class="form-horizontal">
         <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" class="form-control" id="name">
+          <label for="name" class="control-label">Your name:</label>
+          <input id="name" class="form-control" type="text">
         </div>
         <div class="form-group">
-          <label for="date">Date:</label>
-          <input type="text" class="form-control" id="date">
+          <label for="food">Select your favorite food!</label>
+          <select class="form-control" id="food">
+            <option>Mexican</option>
+            <option>Italian</option>
+            <option>Thai</option>
+            <option>Brazilian</option>
+          </select>
         </div>
-        <div class="form-group">
-          <label for="start-time">Start Time:</label>
-          <input type="text" class="form-control" id="start-time">
+        <label for="music" class="control-label">Pick your favorite genre!</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="music" value="metal" checked>
+            Metal
+          </label>
         </div>
-        <div class="form-group">
-          <label for="end-time">End Time</label>
-          <input type="text" class="form-control" id="end-time">
+        <div class="radio">
+          <label>
+            <input type="radio" name="music" value="Dance" checked>
+            Dance
+          </label>
         </div>
-        <button type ="submit" class="btn"> Hit Submit</button>
+        <div class="radio">
+          <label>
+            <input type="radio" name="music" value="Pop" checked>
+            Pop
+          </label>
+        </div>
+
+
       </form>
-      <div id="confirmation">
-      <h1>Here is your confirmation!</h1>
-      <p> <span class ="name"></span> requested an appointment on, <span class ="date"></span> at
-        <span class ="start-time"></span> and ending at
-        <span class ="end-time"></span>.
-      </div>
     </div>
   </body>
 </html>
